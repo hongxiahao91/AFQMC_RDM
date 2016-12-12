@@ -1,0 +1,10 @@
+#!/bin/sh
+#PSUB -o batch.out
+#PSUB -ro
+#PSUB -re
+#PSUB -tM 12:00
+#PSUB -ln 1
+#PSUB -gres ignore
+#MSUB -V
+
+srun -n 1 ./mix.x

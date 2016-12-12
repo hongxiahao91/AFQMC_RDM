@@ -1,0 +1,106 @@
+1
+2
+
+6
+1
+0.1
+0.1
+
+3
+3
+0
+
+30
+5
+20
+20
+6000
+5000
+40
+
+2
+1
+0
+0
+1
+1
+1
+0
+
+9
+1
+0
+1
+0
+
+1000000.0
+0.005
+
+0.0
+1.0
+0.0
+0.0
+0.0
+0.0
+
+0.0
+0.0
+0.0
+
+0.2
+5.0
+0.7
+
+.0002
+
+fscanf (pf,"%d",&ist->n_sites_one);
+fscanf (pf,"%d",&ist->n_sites_two);
+
+fscanf (pf,"%d",&ist->n_spatial_orbitals);
+fscanf (pf,"%d",&ist->n_determinants_trial);
+fscanf (pf,"%lf",&ist->det_cutoff_energy);
+fscanf (pf,"%lf",&ist->det_cutoff_phaseless);
+
+fscanf (pf,"%d",&ist->n_up);
+fscanf (pf,"%d",&ist->n_down);
+fscanf (pf,"%d",&ist->n_bosons);
+
+fscanf (pf,"%d",&ist->n_walkers);
+fscanf (pf,"%d",&ist->n_steps_energy);
+fscanf (pf,"%d",&ist->n_steps_orthogonalize);
+fscanf (pf,"%d",&ist->n_steps_population);
+fscanf (pf,"%d",&ist->n_steps_equilibration);
+fscanf (pf,"%d",&ist->n_steps_start); 
+fscanf (pf,"%d",&ist->n_steps_back_propagation);
+
+fscanf (pf,"%d",&ist->flag_trial);
+fscanf (pf,"%d",&ist->flag_pbc);
+fscanf (pf,"%d",&ist->flag_cp);
+fscanf (pf,"%d",&ist->flag_discrete);
+fscanf (pf,"%d",&ist->flag_phaseless);
+fscanf (pf,"%d",&ist->flag_local_energy);
+fscanf (pf,"%d",&ist->flag_meanfield);
+fscanf (pf,"%d",&ist->flag_spin_polarized);
+
+fscanf (pf,"%d",&ist->flag_simulation_type);
+fscanf (pf,"%d",&ist->flag_read_in_trial);
+fscanf (pf,"%d",&ist->flag_restart);
+fscanf (pf,"%d",&ist->flag_compute_2RDM);
+fscanf (pf,"%d",&ist->flag_back_propagation);
+
+fscanf (pf,"%lg",&cns->beta);
+fscanf (pf,"%lg",&cns->dtau);
+fscanf (pf,"%lg",&cns->U_fermions);
+fscanf (pf,"%lg",&cns->t_fermions);
+fscanf (pf,"%lg",&cns->U_bosons);
+fscanf (pf,"%lg",&cns->t_bosons);
+fscanf (pf,"%lg",&cns->U_bose_fermi);
+fscanf (pf,"%lf",&cns->V_fermions);
+fscanf (pf,"%lg",&cns->trial_density_up);
+fscanf (pf,"%lg",&cns->trial_density_down);
+fscanf (pf,"%lg",&cns->trial_density_bosons);
+fscanf (pf,"%lg",&cns->min_walker_weight);
+fscanf (pf,"%lg",&cns->max_walker_weight);
+fscanf (pf,"%lg",&cns->population_control_factor);
+
+fscanf (pf,"%lg",&cns->energy_cap_constant);  

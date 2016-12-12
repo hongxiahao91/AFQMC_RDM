@@ -1,0 +1,59 @@
+Sites One = 1
+Sites Two = 2
+Sites = 2
+
+Spatial Orbitals = 6
+Spin Orbitals = 12
+N Determinants Max = 1
+Det Cutoff Energy = 0.100000
+N Trial Determinants for Energy = 1
+Det Cutoff Phaseless = 0.100000
+N Trial Determinants for Phaseless = 1
+Number Electrons Up = 3
+Number Electrons Down = 3
+Number Bosons = 0
+
+Number of Walkers = 30
+Nsteps = 200000000
+Nsteps Energy = 5
+Nsteps Orthogonalize = 20
+Nsteps Population Control = 20
+Nsteps Equilibration = 6000
+Nsteps Start = 5000
+Nsteps Production = 199994000
+Nsteps Back Propagation = 40
+
+Flag CP = 0
+Trial Wavefunction Type = 2
+Periodic Boundary Conditions = 1
+Discrete Transform = 0
+Phaseless = 1
+Local Energy = 1
+Mean Field = 1
+Spin Polarized = 0
+Simulation Type = 9
+Flag Real Eigenvectors = 1
+Flag Read in Trial = 1
+Flag Restart = 0
+Flag Compute 2RDM = 1
+Flag Back Propagation = 0
+Beta = 1e+06
+Dtau = 0.005
+
+
+U Fermions = 0
+t Fermions = 1
+U Bosons = 0
+t Bosons = 0
+U Bose Fermi = 0
+V Fermions = 0
+
+
+min walker weight = 0.2
+max walker weight = 5
+population control factor = 0.7
+min number walkers = 15
+max number walkers = 240
+energy cap constant = 0.000200
+
+

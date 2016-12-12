@@ -1,0 +1,31 @@
+set output "EnergyCaps-0002(72115)"
+set term postscript landscape enhanced color "Helvetica" 20
+set style line 1 lt 1 lw 3 pt 3 linecolor rgb "dark-red"
+set style line 2 lt 2 lw 3 pt 3 linecolor rgb "red"
+set style line 3 lt 1 lw 3 pt 3 linecolor rgb "dark-blue"
+set style line 4 lt 2 lw 3 pt 3 linecolor rgb "blue"
+set style line 5 lt 1 lw 3 pt 3 linecolor rgb "dark-green"
+set style line 6 lt 2 lw 3 pt 3 linecolor rgb "green"
+set style line 7 lt 1 lw 3 pt 3 linecolor rgb "dark-orange"
+set style line 8 lt 2 lw 3 pt 3 linecolor rgb "orange"
+set style line 9 lt 1 lw 3 pt 3 linecolor rgb "purple"
+set style line 10 lt 1 lw 3 pt 3 linecolor rgb "magenta"
+set style line 11 lt 1 lw 3 pt 3 linecolor rgb "salmon"
+set style line 12 lt 1 lw 3 pt 3 linecolor rgb "salmon"
+set style line 13 lt 7 lw 6 pt 3 linecolor rgb "navy"
+set style line 15 lt 9 lw 6 pt 3 linecolor rgb "brown"
+set origin 0, 0
+set size 1, 1
+set multiplot
+set origin 0, 0 
+set size 1, 1 
+set size 1, 1
+set xrange [0:125.0]
+set yrange [-14.84:-14.7]
+set title "Energy of Lithium Dimer vs. Imaginary Time, With .0002 \n Constraint on Energy d{/Symbol t}=.005, FCI E = -14.77185 (72115)" font "Helvetica, 20"
+set key top right 
+set xlabel "{/Symbol t}" font "Helvetica, 20"
+set ylabel "Energy (Hartree)" font "Helvetica, 20"
+plot "energy_only_0002_1.dat" using 1:2 with lines ls 1 title "Run 1", "energy_only_0002_2.dat" using 1:2 with lines ls 3 title "Run 2", "energy_only_0002_3.dat" using 1:2 with lines ls 5 title "Run 3",  "energy_only_0002_4.dat" using 1:2 with lines ls 7 title "Run 4",  "energy_only_0002_5.dat" using 1:2 with lines ls 9 title "Run 5"
+unset multiplot
+set output
